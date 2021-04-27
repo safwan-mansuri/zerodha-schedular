@@ -5,7 +5,7 @@ from helper import startProcess
 
 sched = BlockingScheduler()
 
-@sched.scheduled_job('cron', day_of_week='mon-sun', hour=22, minute=9)
+@sched.scheduled_job('cron', day_of_week='mon-sun', hour=18)
 def scheduled_job():
     startProcess()
 
