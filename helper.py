@@ -28,7 +28,7 @@ def downloadData(link) :
   return z.namelist()[0]
 
 def sendData(filename) :
-  url = 'http://localhost:8000/stock_details/today_data'
+  url = 'https://zerodha-backend-stock.herokuapp.com/stock_details/today_data'
   headers = {}
   data = json.dumps({
     "data": equity_data
