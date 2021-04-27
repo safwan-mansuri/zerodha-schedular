@@ -2,7 +2,7 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from requests_html import HTML,HTMLSession
 import pandas, numpy, json, requests, zipfile, io
-from .constants import BSEINDIA, BACKEND_API
+from constants import BACKEND_API, BSEINDIA
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
