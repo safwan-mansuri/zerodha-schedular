@@ -4,6 +4,10 @@ from helper import startProcess
 
 sched = BlockingScheduler()
 
+@sched.scheduled_job('cron', day_of_week='mon-sun', hour=20, minute='04')
+def scheduled_job():
+    startProcess()
+
 @sched.scheduled_job('interval', seconds=2)
 def scheduled_job():
   startProcess()
