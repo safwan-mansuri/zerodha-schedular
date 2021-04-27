@@ -1,6 +1,10 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
 import requests
+import datetime
 from helper import startProcess
+
+
+print(datetime.datetime.now())
 
 sched = BlockingScheduler()
 
