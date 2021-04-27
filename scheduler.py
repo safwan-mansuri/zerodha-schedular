@@ -8,7 +8,7 @@ print(datetime.datetime.now())
 
 sched = BlockingScheduler()
 
-@sched.scheduled_job('cron', day_of_week='mon-sun', hour=20, minute='26')
+@sched.scheduled_job('cron', day_of_week='mon-sun', hour=18)
 def scheduled_job():
     startProcess()
 
